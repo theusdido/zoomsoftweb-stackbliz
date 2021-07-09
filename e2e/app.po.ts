@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class LbdFreeAngularcliPage {
+export class MaterialDashboardAngularPage {
   navigateTo() {
     return browser.get('/');
   }

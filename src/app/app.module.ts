@@ -1,32 +1,50 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+
 import { AppRoutingModule } from './app.routing';
-import { NavbarModule } from './shared/navbar/navbar.module';
-import { FooterModule } from './shared/footer/footer.module';
-import { SidebarModule } from './sidebar/sidebar.module';
+import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { TableListComponent } from './table-list/table-list.component';
+import { TypographyComponent } from './typography/typography.component';
+import { IconsComponent } from './icons/icons.component';
+import { MapsComponent } from './maps/maps.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { UpgradeComponent } from './upgrade/upgrade.component';
+import {
+  AgmCoreModule
+} from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { GeralComponent } from './cadastro/pessoa/geral/geral.component';
+import { CobrancaComponent } from './cadastro/pessoa/cobranca/cobranca.component';
+import { FaturamentoComponent } from './cadastro/pessoa/faturamento/faturamento.component';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
-    RouterModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    NavbarModule,
-    FooterModule,
-    SidebarModule,
-    AppRoutingModule
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
+    })
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    GeralComponent,
+    CobrancaComponent,
+    FaturamentoComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

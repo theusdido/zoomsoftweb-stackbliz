@@ -1,64 +1,49 @@
 <!--
- =========================================================
- * Light Bootstrap Dashboard Angular - v1.7.0
- =========================================================
 
- * Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2
- * Copyright 2020 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT
+=========================================================
+* Material Dashboard Angular - v2.5.0
+=========================================================
 
- =========================================================
+* Product Page: https://www.creative-tim.com/product/material-dashboard-angular2
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-angular2/blob/master/LICENSE.md)
 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 -->
 <!doctype html>
 <html>
 <head>
-    <base href="/">
+    <base href='/'>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Light Bootstrap Dashboard by Creative Tim</title>
+    <title>Material Dashboard Angular by Creative Tim</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-    <!-- Animate -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet">
-
     <!--     Fonts and icons     -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    <style media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY-HERE"></script>
 
-    #loader {
-      position: absolute;
-      display: block;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 1;
-      -webkit-transform: translate3d(0, -50%, 0);
-      -moz-transform: translate3d(0, -50%, 0);
-      -o-transform: translate3d(0, -50%, 0);
-      -ms-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
-      text-align: center;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      top: 50%; }
-
-    </style>
 </head>
 <body>
   <app-root>
-      <div id="loader"><img src="assets/img/loader-preview.svg" alt="loading"></div>
+    <div class="loader">
+      <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+    </div>
   </app-root>
 </body>
+
 
 </html>
